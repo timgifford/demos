@@ -7,6 +7,11 @@ namespace Sayso.Domain
         private readonly ConsoleLogger logger = new ConsoleLogger();
         private readonly SmtpServer emailServer = new SmtpServer(ConfigurationManager.SmtpServer);
 
+        /// <summary>
+        /// Process Order
+        /// </summary>
+        /// <param name="customerId"></param>
+        /// <param name="salesOrderId"></param>
         public void ProcessOrder(Guid customerId, Guid salesOrderId)
         {
             var customerRepository = new CustomerRepository();
@@ -29,7 +34,7 @@ namespace Sayso.Domain
             }
             else
             {
-                ProcessOrder(currentCustomer, salesOrder);
+                CompleteOrder(currentCustomer, salesOrder);
             }
 
             customerRepository.Save(currentCustomer);
@@ -43,9 +48,9 @@ namespace Sayso.Domain
             emailServer.Send(customer.ApprovalManagerEmail, "Request Approval for large order");
         }
 
-        private void ProcessOrder(Customer customer, SalesOrder order)
+        private void CompleteOrder(Customer customer, SalesOrder order)
         {
-            logger.WriteLine("ProcessOrder");
+            logger.WriteLine("CompleteOrder");
             order.Status = SalesOrderStatus.Completed;
             emailServer.Send(customer.EmailAddress, "Your order has been shipped");
         }
