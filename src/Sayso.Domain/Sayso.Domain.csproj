@@ -36,9 +36,11 @@
       <HintPath>..\..\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -50,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessRule.cs" />
+    <Compile Include="Membership\CouchDbMembershipProvider.cs" />
+    <Compile Include="OrderProcessor.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="ConfigurationManager.cs" />
     <Compile Include="ConsoleLogger.cs" />

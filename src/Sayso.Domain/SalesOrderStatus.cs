@@ -6,6 +6,7 @@ namespace Sayso.Domain
         Pending,
         Approved,
         Completed,
-        LargeOrder
+        LargeOrder,
+        Denied
     }
 }
