@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Sayso.Domain
 {
@@ -25,7 +26,11 @@ namespace Sayso.Domain
         {
             this.orderProcessors = orderProcessors;
         }
-
+        
+        public ValidationResult ValidateOrder(SalesOrder order)
+        {
+            return new ValidationResult();
+        }
 
         public void ProcessOrder(Guid customerId, Guid salesOrderId)
         {
@@ -85,4 +90,17 @@ namespace Sayso.Domain
 //        }
     }
 
+    public class ValidationResult
+    {
+        private readonly ICollection<string> errors = new List<string>();
+        
+        public void AddErrorMessage(string message)
+        {
+            errors.Add(message);
+        }
+        public bool IsValid
+        {
+            get { return errors.Count == 0; }
+        }
+    }
 }
