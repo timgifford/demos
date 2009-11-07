@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 
 namespace Sayso.Domain
 {
@@ -88,19 +87,5 @@ namespace Sayso.Domain
 //            salesOrder.Status = SalesOrderStatus.Pending;
 //            emailServer.Send(customer.ApprovalManagerEmail, "Request Approval for low credit score");
 //        }
-    }
-
-    public class ValidationResult
-    {
-        private readonly ICollection<string> errors = new List<string>();
-        
-        public void AddErrorMessage(string message)
-        {
-            errors.Add(message);
-        }
-        public bool IsValid
-        {
-            get { return errors.Count == 0; }
-        }
     }
 }
