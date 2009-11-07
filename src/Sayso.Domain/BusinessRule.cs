@@ -26,40 +26,25 @@ namespace Sayso.Domain
             // Business Rules
             if(currentCustomer.CreditScore < 500)
             {
-                RequestApprovalForLowCreditScore(currentCustomer, salesOrder);
+                logger.WriteLine("RequestApprovalForLowCreditScore");
+                salesOrder.Status = SalesOrderStatus.Pending;
+                emailServer.Send(currentCustomer.ApprovalManagerEmail, "Request Approval for low credit score");
             }
             else if( salesOrder.Total >= 1000D )
             {
-                RequestApprovalForLargeOrder(currentCustomer, salesOrder);
+                logger.WriteLine("RequestApprovalForLargeOrder");
+                salesOrder.Status = SalesOrderStatus.LargeOrder;
+                emailServer.Send(currentCustomer.ApprovalManagerEmail, "Request Approval for large order");
             }
             else
             {
-                CompleteOrder(currentCustomer, salesOrder);
+                logger.WriteLine("CompleteOrder");
+                salesOrder.Status = SalesOrderStatus.Completed;
+                emailServer.Send(currentCustomer.EmailAddress, "Your order has been shipped");
             }
 
             customerRepository.Save(currentCustomer);
             salesOrderRepository.Save(salesOrder);
-        }
-
-        private void RequestApprovalForLargeOrder(Customer customer, SalesOrder order)
-        {
-            logger.WriteLine("RequestApprovalForLargeOrder");
-            order.Status = SalesOrderStatus.LargeOrder;
-            emailServer.Send(customer.ApprovalManagerEmail, "Request Approval for large order");
-        }
-
-        private void CompleteOrder(Customer customer, SalesOrder order)
-        {
-            logger.WriteLine("CompleteOrder");
-            order.Status = SalesOrderStatus.Completed;
-            emailServer.Send(customer.EmailAddress, "Your order has been shipped");
-        }
-
-        private void RequestApprovalForLowCreditScore(Customer customer, SalesOrder salesOrder)
-        {
-            logger.WriteLine("RequestApprovalForLowCreditScore");
-            salesOrder.Status = SalesOrderStatus.Pending;
-            emailServer.Send(customer.ApprovalManagerEmail, "Request Approval for low credit score");
         }
     }
 }
