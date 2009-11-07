@@ -62,8 +62,4 @@ namespace Sayso.Domain
             emailServer.Send(customer.ApprovalManagerEmail, "Request Approval for low credit score");
         }
     }
-
-    public class ShippingWebService
-    {
-    }
 }
