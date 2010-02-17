@@ -7,6 +7,11 @@ namespace Sayso.Domain
         private readonly ConsoleLogger logger = new ConsoleLogger();
         private readonly SmtpServer emailServer = new SmtpServer(ConfigurationManager.SmtpServer);
 
+        public void Accept(IVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
+
         /// <summary>
         /// Process Order
         /// </summary>
@@ -46,5 +51,10 @@ namespace Sayso.Domain
             customerRepository.Save(currentCustomer);
             salesOrderRepository.Save(salesOrder);
         }
+    }
+
+    public interface IVisitor
+    {
+        void Visit(object objectToVisit);
     }
 }

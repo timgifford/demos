@@ -15,5 +15,10 @@ namespace Sayso.Domain
         }
 
         public double Total { get; set; }
+
+        public void ApplyTaxes(IowaSalesTaxVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
     }
 }
