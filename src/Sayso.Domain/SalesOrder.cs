@@ -8,15 +8,10 @@ namespace Sayso.Domain
         {
         }
 
-        public SalesOrderStatus Status
-        {
-            get { throw new NotImplementedException(); }
-            set { throw new NotImplementedException(); }
-        }
-
+        public SalesOrderStatus Status { get; set; }
         public double Total { get; set; }
 
-        public void ApplyTaxes(IowaSalesTaxVisitor visitor)
+        public void ApplyTaxes(IVisitor visitor)
         {
             visitor.Visit(this);
         }

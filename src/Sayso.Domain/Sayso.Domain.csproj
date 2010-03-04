@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="BusinessRule.cs" />
     <Compile Include="ISP\CouchDBMembershipProvider.cs" />
+    <Compile Include="IVisitor.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="ConfigurationManager.cs" />
     <Compile Include="ConsoleLogger.cs" />

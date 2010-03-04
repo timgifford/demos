@@ -52,9 +52,4 @@ namespace Sayso.Domain
             salesOrderRepository.Save(salesOrder);
         }
     }
-
-    public interface IVisitor
-    {
-        void Visit(object objectToVisit);
-    }
 }
