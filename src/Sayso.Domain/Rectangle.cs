@@ -55,6 +55,43 @@ namespace Sayso.Domain
 
     #endregion
 
+    #region A Square is not a rectangle, unless....
+
+    public class ImmutableRectangle {
+        public ImmutableRectangle(double height, double width)
+        {
+            Height = height;
+            Width = width;
+        }
+
+        public virtual double Height { get; private set; }
+        public virtual double Width { get; private set; }
+    }
+
+    public class ImmutableSquare : ImmutableRectangle {
+
+        public ImmutableSquare(double sideLength) : this(sideLength, sideLength)
+        {
+        }
+
+        private ImmutableSquare(double height, double width) : base(height, width)
+        {
+        }
+    }
+
+    [TestFixture]
+    public class ImmutableSquareFixture {
+        [Test]
+        public void ShouldNotBeSurprisedWhenSettingAProperty() {
+            var square = new ImmutableSquare(42);
+            
+            Assert.That(square.Width, Is.EqualTo(42));
+            Assert.That(square.Height, Is.EqualTo(42));
+        }
+    }
+
+    #endregion
+
     #region .NET Framework example
 
     [TestFixture]
