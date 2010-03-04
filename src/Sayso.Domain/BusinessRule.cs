@@ -17,9 +17,11 @@ namespace Sayso.Domain
             var customerRepository = new CustomerRepository();
             var salesOrderRepository = new SalesOrderRepository();
 
+            // Get the Sales Order
             logger.WriteLine("Get SalesOrder ID={0}", salesOrderId);
             var salesOrder = salesOrderRepository.GetById(salesOrderId);
 
+            // Get the Current Customer
             logger.WriteLine("Get Customer ID={0}", customerId);
             var currentCustomer = customerRepository.GetById(customerId);
 
@@ -43,6 +45,7 @@ namespace Sayso.Domain
                 emailServer.Send(currentCustomer.EmailAddress, "Your order has been shipped");
             }
 
+            // Save the sales order and customer
             customerRepository.Save(currentCustomer);
             salesOrderRepository.Save(salesOrder);
         }

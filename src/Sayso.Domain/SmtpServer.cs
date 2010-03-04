@@ -9,7 +9,7 @@ namespace Sayso.Domain
 
         public void Send(string toEmailAddress, string message)
         {
-            // Sends and email
+            // Sends an email
         }
     }
 
