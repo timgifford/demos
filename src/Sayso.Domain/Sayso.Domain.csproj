@@ -52,7 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessRule.cs" />
+    <Compile Include="ISP\ComposableCouchDbMembershipProvider.cs" />
     <Compile Include="ISP\CouchDBMembershipProvider.cs" />
+    <Compile Include="ISP\Interfaces.cs" />
+    <Compile Include="ISP\Implementation.cs" />
+    <Compile Include="ISP\MembershipConfiguration.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="ConfigurationManager.cs" />
     <Compile Include="ConsoleLogger.cs" />
