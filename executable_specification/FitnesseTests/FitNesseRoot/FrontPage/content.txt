@@ -1,0 +1,9 @@
+!define COMMAND_PATTERN {%m %p}
+!define TEST_RUNNER {dotnet\FitServer.exe}
+!define PATH_SEPARATOR {;}
+
+!path .\..\..\bin\*.dll
+!path .\dotnet\*.dll
+
+
+!contents -R2 -g -p -f -h

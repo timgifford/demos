@@ -3,3 +3,7 @@
 _ReSharper*/
 bin/
 obj/
+executable_specification/FitnesseTests/FitnesseRoot/ErrorLogs/
+executable_specification/FitnesseTests/FitnesseRoot/RecentChanges/
+executable_specification/FitnesseTests/FitNesseRoot/files/testResults/
+
