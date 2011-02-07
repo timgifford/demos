@@ -1,25 +1,24 @@
-﻿    using System;
-    using fit;
+﻿using fit;
 
 public class CalculatorFixture : ColumnFixture
 {
-    public int x;
-    public int y;
+    public int X;
+    public int Y;
 
     private readonly Calculator calculator = new Calculator();
 
     public int Product()
     {
-        return calculator.Multiply(x, y);
+        return calculator.Multiply(X, Y);
     }
 
     public int Sum()
     {
-        return calculator.Add(x, y);
+        return calculator.Add(X, Y);
     }
 
     public int Difference()
     {
-        return calculator.Subtract(x, y);
+        return calculator.Subtract(X, Y);
     }
 }
