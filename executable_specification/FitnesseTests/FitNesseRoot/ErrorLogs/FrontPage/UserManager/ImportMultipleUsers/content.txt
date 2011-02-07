@@ -1,0 +1,6 @@
+!3 !-fit-!
+|'''Date: '''|!-11:23:20 PM (CST) on Sunday, February 6, 2011-!|
+|'''Test Page: '''|.FrontPage.UserManager.ImportMultipleUsers|
+|'''Command: '''|!-dotnet\FitServer.exe C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\fit.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\FitLibrary.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\GiffordConsulting.Business.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\Tests.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\dotnet\fit.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\dotnet\FitLibrary.dll wkst662 8081 5-!|
+|'''Exit code: '''|!-6-!|
+|'''Time elapsed: '''|!-0.388 seconds-!|
