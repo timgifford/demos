@@ -44,15 +44,21 @@
       <HintPath>..\..\tools\nunit\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fit\CalculatorFixture.cs" />
-    <Compile Include="Fit\ImportMultipleUsers.cs" />
+    <Compile Include="Calculators\CalculatorFixture.cs" />
+    <Compile Include="UserManagement\ImportMultipleUsersFixture.cs" />
+    <Compile Include="UserManagement\ImportUserFixture.cs" />
+    <Compile Include="UserManagement\UserImportValidatorFixture.cs" />
+    <Compile Include="UserManagement\VerifyUsersRowFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Unit\BetterCalculatorTests.cs" />
-    <Compile Include="Unit\CalculatorTests.cs" />
+    <Compile Include="Calculators\BetterCalculatorTests.cs" />
+    <Compile Include="Calculators\CalculatorTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GiffordConsulting.Business\GiffordConsulting.Business.csproj">

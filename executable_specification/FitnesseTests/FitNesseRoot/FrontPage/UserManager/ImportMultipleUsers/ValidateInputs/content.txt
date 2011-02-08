@@ -1,0 +1,9 @@
+|Import Multiple Users|
+
+|Login as|User Manager|
+
+|Import users from file                          |
+|Username|First Name|Last Name|Error Message!    |
+|tgifford|Tim       |Gifford  |blank             |
+|superman|Clark     |Kent     |blank             |
+|batman  |Bruce     |null|Last Name Required|

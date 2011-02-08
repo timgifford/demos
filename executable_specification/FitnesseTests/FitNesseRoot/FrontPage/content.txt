@@ -6,4 +6,4 @@
 !path .\dotnet\*.dll
 
 
-!contents -R2 -g -p -f -h
+!contents -R3 -g -p -f -h

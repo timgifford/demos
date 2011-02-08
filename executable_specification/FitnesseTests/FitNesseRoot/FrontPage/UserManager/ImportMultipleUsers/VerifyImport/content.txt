@@ -1,0 +1,15 @@
+|Import Multiple Users|
+
+|Login as|User Manager|
+
+|Import users from file       |
+|Username|First Name|Last Name|
+|tgifford|Tim       |Gifford  |
+|superman|Clark     |Kent     |
+
+
+|Verify users in system       |
+|Username|First Name|Last Name|
+|tgifford|Tim       |Gifford  |
+|superman|Clark     |Kent     |
+

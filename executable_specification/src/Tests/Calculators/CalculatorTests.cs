@@ -1,7 +1,7 @@
 ﻿
 using NUnit.Framework;
 
-namespace Tests.Unit
+namespace Tests.Calculators
 {
     [TestFixture]
     public class CalculatorTests
