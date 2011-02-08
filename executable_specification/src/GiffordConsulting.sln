@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiffordConsulting.Business"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{497C93D9-77AE-4109-95BD-1466B8638A5F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiffyCalc", "GiffyCalc\GiffyCalc.csproj", "{15E4CB2D-0F1C-4CA1-B4E6-548DA512977F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{497C93D9-77AE-4109-95BD-1466B8638A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{497C93D9-77AE-4109-95BD-1466B8638A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{497C93D9-77AE-4109-95BD-1466B8638A5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E4CB2D-0F1C-4CA1-B4E6-548DA512977F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E4CB2D-0F1C-4CA1-B4E6-548DA512977F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E4CB2D-0F1C-4CA1-B4E6-548DA512977F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E4CB2D-0F1C-4CA1-B4E6-548DA512977F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

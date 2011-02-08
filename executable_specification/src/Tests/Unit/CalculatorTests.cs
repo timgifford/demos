@@ -12,7 +12,16 @@ namespace Tests.Unit
         public void MultiplyTwoNumbers()
         {
             calculator = new Calculator();
+
             Assert.That(calculator.Multiply(2, 4), Is.EqualTo(8));
+        }
+
+        [Test]
+        public void AddTwoNumbers()
+        {
+            calculator = new Calculator();
+
+            Assert.That(calculator.Add(2, 4), Is.EqualTo(6));
         }
     }
 }
