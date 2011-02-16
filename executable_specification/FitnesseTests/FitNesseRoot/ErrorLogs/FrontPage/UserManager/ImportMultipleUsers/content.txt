@@ -1,6 +1,6 @@
 !3 !-fit-!
-|'''Date: '''|!-12:46:01 AM (CST) on Tuesday, February 8, 2011-!|
+|'''Date: '''|!-2:16:21 PM (CST) on Wednesday, February 9, 2011-!|
 |'''Test Page: '''|.FrontPage.UserManager.ImportMultipleUsers|
-|'''Command: '''|!-dotnet\FitServer.exe C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\fit.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\FitLibrary.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\GiffordConsulting.Business.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\nunit.framework.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\Tests.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\dotnet\fit.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\dotnet\FitLibrary.dll wkst662 8081 6-!|
+|'''Command: '''|!-dotnet\FitServer.exe C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\fit.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\FitLibrary.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\GiffordConsulting.Business.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\nunit.framework.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\TechTalk.SpecFlow.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\Tests.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\dotnet\fit.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\dotnet\FitLibrary.dll wkst662 8081 4-!|
 |'''Exit code: '''|!-1-!|
-|'''Time elapsed: '''|!-0.32 seconds-!|
+|'''Time elapsed: '''|!-0.487 seconds-!|

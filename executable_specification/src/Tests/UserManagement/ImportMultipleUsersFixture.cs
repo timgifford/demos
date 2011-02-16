@@ -9,6 +9,21 @@ public class ImportMultipleUsersFixture : DoFixture
     {
     }
 
+    public void Given()
+    {
+    }
+
+    public void When()
+    {
+    }
+
+    public void When(string statement)
+    {
+    }
+    public void Then()
+    {
+    }
+
     public Fixture ImportUsersFromFile()
     {
         return new ImportUserFixture(userService);

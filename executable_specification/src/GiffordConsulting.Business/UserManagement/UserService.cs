@@ -28,7 +28,7 @@ public class UserService : IUserService
         {
             innerList[user.Username] = user;
         }
-        return new ValidationResult();
+        return validationResult;
     }
 
     public IEnumerable<User> GetAll()

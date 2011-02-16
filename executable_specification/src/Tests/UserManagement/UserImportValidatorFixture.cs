@@ -8,27 +8,27 @@ namespace Tests.UserManagement
         [Test]
         public void ShouldRequireLastName()
         {
+            // Arrange
+            var testUser = new User();
+            testUser.FirstName = "FirstName";
+            testUser.Username = "username";
+
+            // Act
             var validator = new UserImportValidator();
-            
-            var userToValidate = new User();
-            userToValidate.FirstName = "FirstName";
-            userToValidate.Username = "username";
+            var result = validator.Validate(testUser);
 
-            var result = validator.Validate(userToValidate);
-
+            // Assert
             Assert.That(result.ToString(),Is.EqualTo("Last Name Required"));
         }
 
         [Test]
         public void ShouldRequireFirstName()
         {
-            var validator = new UserImportValidator();
-
             var userToValidate = new User();
             userToValidate.LastName = "LastName";
             userToValidate.Username = "username";
 
-            var result = validator.Validate(userToValidate);
+            var result = new UserImportValidator().Validate(userToValidate);
 
             Assert.That(result.ToString(), Is.EqualTo("First Name Required"));
         }

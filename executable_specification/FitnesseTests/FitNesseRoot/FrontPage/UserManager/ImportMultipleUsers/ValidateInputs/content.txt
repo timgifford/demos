@@ -1,9 +1,14 @@
 |Import Multiple Users|
 
+|Given                |
 |Login as|User Manager|
 
+|When|Users Imported from a file|
+
+|Then                                            |
 |Import users from file                          |
 |Username|First Name|Last Name|Error Message!    |
 |tgifford|Tim       |Gifford  |blank             |
 |superman|Clark     |Kent     |blank             |
-|batman  |Bruce     |null|Last Name Required|
+|batman  |Bruce     |null     |Last Name Required|
+|blank   |Bruce     |Wayne    |Username Required |

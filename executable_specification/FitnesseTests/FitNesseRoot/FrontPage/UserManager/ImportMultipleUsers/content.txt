@@ -1,3 +1,12 @@
+As a User Admin
+I want to import multiple users from a file
+So that I can integrate with other systems
+
+Acceptance Criteria
+ * Only the User Admin is able to perform this action
+ * All valid users in the file are in the system
+ * Invalid users are sent back to the User Admin to correct
+
 !contents -R2 -g -p -f -h
 
 

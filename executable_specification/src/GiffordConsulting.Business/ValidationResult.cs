@@ -1,5 +1,3 @@
-using System;
-
 public class ValidationResult
 {
     private string errorMessage = string.Empty;
@@ -18,4 +16,5 @@ public class ValidationResult
     {
         return (errorMessage.Length == 0);
     }
+
 }
