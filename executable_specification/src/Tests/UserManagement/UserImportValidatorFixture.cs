@@ -32,5 +32,17 @@ namespace Tests.UserManagement
 
             Assert.That(result.ToString(), Is.EqualTo("First Name Required"));
         }
+
+        [Test]
+        public void ShouldRequireUsername()
+        {
+            var userToValidate = new User();
+            userToValidate.LastName = "LastName";
+            userToValidate.FirstName = "FirstName";
+
+            var result = new UserImportValidator().Validate(userToValidate);
+
+            Assert.That(result.ToString(), Is.EqualTo("Username Required"));
+        }
     }
 }

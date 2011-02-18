@@ -1,6 +1,0 @@
-!3 !-fit-!
-|'''Date: '''|!-12:46:05 AM (CST) on Tuesday, February 8, 2011-!|
-|'''Test Page: '''|.FrontPage|
-|'''Command: '''|!-dotnet\FitServer.exe C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\fit.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\FitLibrary.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\GiffordConsulting.Business.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\nunit.framework.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\..\..\bin\Tests.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\dotnet\fit.dll;C:\code\github\demos\executable_specification\tools\FitNesse\.\dotnet\FitLibrary.dll wkst662 8081 7-!|
-|'''Exit code: '''|!-2-!|
-|'''Time elapsed: '''|!-0.442 seconds-!|

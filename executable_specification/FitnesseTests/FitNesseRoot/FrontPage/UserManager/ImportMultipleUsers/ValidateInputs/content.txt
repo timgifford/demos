@@ -5,10 +5,15 @@
 
 |When|Users Imported from a file|
 
-|Then                                            |
-|Import users from file                          |
-|Username|First Name|Last Name|Error Message!    |
-|tgifford|Tim       |Gifford  |blank             |
-|superman|Clark     |Kent     |blank             |
-|batman  |Bruce     |null     |Last Name Required|
-|blank   |Bruce     |Wayne    |Username Required |
+|Then                                                                 |
+|Import users from file                                               |
+|Username|First Name|Last Name|Error Message!                         |
+|tgifford|Tim       |Gifford  |blank                                  |
+|superman|Clark     |Kent     |blank                                  |
+|batman  |Bruce     |null     |Last Name Required                     |
+|blank   |Bruce     |Wayne    |Username Required                      |
+|batman  |blank     |blank    |First Name Required, Last Name Required|
+
+
+
+

@@ -10,7 +10,6 @@ Scenario: Require last name
   When row is imported
   Then validation error should be "Last Name Required"
 
-  
 Scenario: Require first name
   Given a user row:
     | Username | First Name | Last Name |
@@ -18,8 +17,8 @@ Scenario: Require first name
   When row is imported
   Then validation error should be "First Name Required"
 
-Scenario: Require username
-  Given a user row:
+ Scenario: Require username
+   Given a user row:
     | Username | First Name | Last Name |
     |          | Tim        | Gifford   |
   When row is imported

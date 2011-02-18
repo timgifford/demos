@@ -84,7 +84,7 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void RequireFirstName()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Require first name", ((string[])(null)));
-#line 14
+#line 13
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -95,11 +95,11 @@ this.ScenarioSetup(scenarioInfo);
                         "tgifford",
                         "",
                         "Gifford"});
-#line 15
+#line 14
   testRunner.Given("a user row:", ((string)(null)), table2);
-#line 18
+#line 17
   testRunner.When("row is imported");
-#line 19
+#line 18
   testRunner.Then("validation error should be \"First Name Required\"");
 #line hidden
             testRunner.CollectScenarioErrors();
@@ -110,8 +110,8 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void RequireUsername()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Require username", ((string[])(null)));
-#line 21
-this.ScenarioSetup(scenarioInfo);
+#line 20
+ this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                         "Username",
@@ -121,11 +121,11 @@ this.ScenarioSetup(scenarioInfo);
                         "",
                         "Tim",
                         "Gifford"});
-#line 22
-  testRunner.Given("a user row:", ((string)(null)), table3);
-#line 25
+#line 21
+   testRunner.Given("a user row:", ((string)(null)), table3);
+#line 24
   testRunner.When("row is imported");
-#line 26
+#line 25
   testRunner.Then("validation error should be \"Username Required\"");
 #line hidden
             testRunner.CollectScenarioErrors();
