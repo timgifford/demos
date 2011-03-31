@@ -13,6 +13,10 @@ public class UserImportValidator
         {
             result.Add("First Name Required");
         }
+//        if (String.IsNullOrEmpty(userToValidate.Username))
+//        {
+//            result.Add("Username Required");
+//        }
         return result;
     }
 }
