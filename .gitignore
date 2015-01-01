@@ -6,4 +6,4 @@ obj/
 executable_specification/FitnesseTests/FitNesseRoot/ErrorLogs/
 executable_specification/FitnesseTests/FitNesseRoot/RecentChanges/
 executable_specification/FitnesseTests/FitNesseRoot/files/testResults/
-
+target/
